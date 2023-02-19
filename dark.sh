@@ -972,7 +972,7 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
 
  - - - - - - - ×∆× - - - - - - - 
 
- User ID: $(cat ${userid}) 
+ #User ID: $(cat ${userid}) 
 
  - - - - - - - ×∆× - - - - - - - 
 
@@ -996,7 +996,7 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
 
  " 
 
- activ=$(cat ${userid}) 
+ #activ=$(cat ${userid}) 
 
  curl -s --max-time 10 -d "chat_id=$activ&disable_web_page_preview=1&text=$MSG" $URL &>/dev/null 
 
