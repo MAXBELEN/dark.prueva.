@@ -711,7 +711,8 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
  [[ ! -d ${SCPfrm} ]] && mkdir ${SCPfrm} 
 
  [[ ! -d ${SCPinst} ]] && mkdir ${SCPinst} 
-
+mkdir /etc/VPS-MX/tmp
+touch /etc/VPS-MX/tmp/style
  case $1 in 
 
  "menu"|"message.txt"|"ID")ARQ="${SCPdir}/";; #Menu 
