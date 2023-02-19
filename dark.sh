@@ -960,7 +960,7 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
 
  wget -qO- ifconfig.me > /etc/VPS-MX/IP.log 
 
- userid="${SCPdir}/ID" 
+ #userid="${SCPdir}/ID" 
 
  #TOKEN="5935180805:AAHd0N9ube02JlsUrKWSVChOVsZGBtabSrw" 
 
