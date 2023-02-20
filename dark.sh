@@ -1018,7 +1018,8 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
  echo "${SCPdir}/menu" > /usr/bin/menu && chmod +x /usr/bin/menu 
 
  echo "${SCPdir}/menu" > /usr/bin/vpsdark && chmod +x /usr/bin/vpsdark 
-
+ mkdir /etc/VPS-MX/tmp
+ touch /etc/VPS-MX/tmp/style
  echo "$Key" > ${SCPdir}/key.txt 
 
  [[ -d ${SCPinstal} ]] && rm -rf ${SCPinstal} 
