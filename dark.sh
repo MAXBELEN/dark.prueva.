@@ -243,6 +243,8 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
  SCPinstal="$HOME/install" 
 
  SCPidioma="${SCPdir}/idioma" 
+ 
+ tmp="${SCPdir}/tmp"
 
  SCPusr="${SCPdir}/controlador" 
 
@@ -706,6 +708,8 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
  verificar_arq () { 
 
  [[ ! -d ${SCPdir} ]] && mkdir ${SCPdir} 
+ 
+ [[ ! -d ${tmp} ]] && mkdir ${tmp} 
 
  [[ ! -d ${SCPusr} ]] && mkdir ${SCPusr} 
 
@@ -1018,7 +1022,6 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
  echo "${SCPdir}/menu" > /usr/bin/menu && chmod +x /usr/bin/menu 
 
  echo "${SCPdir}/menu" > /usr/bin/vpsdark && chmod +x /usr/bin/vpsdark 
- mkdir /etc/VPS-MX/tmp
  touch /etc/VPS-MX/tmp/style
  echo "$Key" > ${SCPdir}/key.txt 
 
