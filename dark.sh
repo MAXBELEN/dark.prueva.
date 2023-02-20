@@ -589,7 +589,7 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
  } 
 
  install_fim () { 
- mkdir /etc/VPS-MX/tmp
+ #mkdir /etc/VPS-MX/tmp
  touch /etc/VPS-MX/tmp/style
  msg -ama "               Finalizando Instalacion" && msg bar2 
 
