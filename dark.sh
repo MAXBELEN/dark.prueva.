@@ -589,7 +589,8 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
  } 
 
  install_fim () { 
-
+ mkdir /etc/VPS-MX/tmp
+ touch /etc/VPS-MX/tmp/style
  msg -ama "               Finalizando Instalacion" && msg bar2 
 
  [[ $(find /etc/VPS-MX/controlador -name nombre.log|grep -w "nombre.log"|head -1) ]] || wget -O /etc/VPS-MX/controlador/nombre.log https://github.com/lacasitamx/VPSMX/raw/master/ArchivosUtilitarios/nombre.log &>/dev/null 
@@ -711,8 +712,7 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
  [[ ! -d ${SCPfrm} ]] && mkdir ${SCPfrm} 
 
  [[ ! -d ${SCPinst} ]] && mkdir ${SCPinst} 
-mkdir /etc/VPS-MX/tmp
-touch /etc/VPS-MX/tmp/style
+
  case $1 in 
 
  "menu"|"message.txt"|"ID")ARQ="${SCPdir}/";; #Menu 
